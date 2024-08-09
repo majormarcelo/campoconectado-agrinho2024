@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slide.css">
+    <script src="slide.js" defer></script>
+    <title>Campo Conectado - Seu buscador de talentos!</title>
+</head>
+<body>
+    <header>
+        <img class="cabecalho-imagem logo" src="logo site.png" alt="Logotipo site">
+        <nav>
+            <ul>
+                <li><a href="#inicio">INÍCIO</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="img/slide-1.png" alt="slide 2">
+                <img class="img-mobile" src="img/slide-1-mob.png" alt="slide 1 mobile">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="img/slide-2.png" alt="slide 2">
+                <img class="img-mobile" src="img/slide-2-mob.png" alt="slide 2 mobile">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="img/slide-3.png" alt="slide 3">
+                <img class="img-mobile" src="img/slide-3-mob.png" alt="slide 3 mobile">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <section id="sobre">
+            <h2 class="sobre-titulo">Conheça o nosso trabalho:</h2>
+            <p>No <strong>Campo Conectado</strong>, nossa missão é transformar a maneira como empregadores e trabalhadores rurais se encontram. Somos um buscador online de talentos dedicado a conectar empregadores com trabalhadores rurais capacitados, garantindo que as melhores oportunidades de trabalho estejam ao alcance de todos.</p>
+            <p>Para empregadores, oferecemos uma plataforma intuitiva onde é possível encontrar profissionais qualificados para qualquer tipo de trabalho rural. Seja na agricultura, pecuária, colheita, ou qualquer outra área do setor, você encontrará aqui os talentos que precisa para impulsionar seu negócio.</p>
+            <p>Para os trabalhadores rurais, o Campo Conectado é mais do que um simples site de empregos. É um espaço onde você pode criar um perfil detalhado, destacando suas habilidades e experiências. Com nosso sistema de busca avançada, empregadores de todo o país poderão descobrir seu talento e oferecer oportunidades que se alinhem ao seu perfil profissional.</p>   
+            <p>No <strong>Campo Conectado</strong>, acreditamos no poder da conexão e no valor do trabalho rural. Nossa plataforma foi criada para facilitar essas conexões, promovendo o crescimento econômico e a valorização do trabalho no campo.</p> 
+            <p>Junte-se a nós e descubra como o <strong>Campo Conectado</strong> pode ajudar você a encontrar as melhores oportunidades e os talentos certos para o sucesso de sua empreitada. Aqui, o campo está mais conectado do que nunca!</p>
+        </section>
+
+        <section id="criar-perfil">
+            <h2 class="perfil-titulo">Criar Perfil</h2>
+            <form>
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="idade"><strong>Idade:</strong></label>
+                <input type="number" id="idade" name="idade" required>
+                <label for="habilidades"><strong>Habilidades:</strong></label>
+                <input type="text" id="habilidades" name="habilidades" required>
+                <label for="experiencias"><strong>Experiências:</strong></label>
+                <input type="text" id="experiencias" name="experiencias" required>
+                <label for="localidade"><strong>Localidade:</strong></label>
+                <input type="text" id="localidade" name="localidade" required>
+                <label for="contato"><strong>Contato:</strong></label>
+                <input type="text" id="contato1" name="contato1" required>
+                <label for="foto"><strong>Foto de perfil:</strong></label>
+                <input type="file" id="foto" name="foto" accept="image/*" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="buscar-talentos">
+            <h2 class="buscar-titulo">Buscar Talentos</h2>
+            <div id="lista-perfis">
+                <div class="perfil">
+                    <img src="Perfil 1.png" alt="Perfil 1">
+                    <h3>Manoel Souza, 36 anos</h3>
+                    <p><strong>Habilidades:</strong> Agricultura, Jardinagem</p>
+                    <p><strong>Localidade:</strong> Arapongas - Paraná</p>
+                </div>
+                <div class="perfil">
+                    <img src="Perfil 2.png" alt="Perfil 2">
+                    <h3>Pedro Garcia</h3>
+                    <p><strong>Habilidades:</strong> Pecuária, Manutenção de Máquinas</p>
+                    <p><strong>Localidade:</strong> Loanda - Paraná </p>
+                </div>
+                <!-- Adicionar mais perfis conforme necessário -->
+                <div class="search-container">
+                    <input type="text" id="pesquisa" name="pesquisa" placeholder="Procure por habilidades...">
+                    <button type="submit">Pesquisar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos">
+            <h2 class="depoimentos-titulo">Depoimentos</h2>
+            <div class="depoimento">
+                <p>"Este site me ajudou a encontrar o trabalhador perfeito para minha fazenda!" - <strong> Empresa Apucarana Agro</strong></p>
+            </div>
+            <div class="depoimento">
+                <p>"Consegui um emprego graças ao Campo Conectado. Muito obrigado!" - <strong> João Silva</strong></p>
+            </div>
+            <!-- Adicionar mais depoimentos conforme necessário -->
+        </section>
+
+        <section id="contato">
+            <h2 class="contato-titulo">Contato</h2>
+            <div class="contato-container">
+                <form class="contato-form">
+                    <label for="nome-contato"><strong>Nome:</strong></label>
+                    <input type="text" id="nome-contato" name="nome-contato" required>
+                    <label for="email-contato"><strong>Email:</strong></label>
+                    <input type="email" id="email-contato" name="email-contato" required>
+                    <label for="mensagem"><strong>Mensagem:</strong></label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="mapa" class="contato-mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.226457735893!2d144.96315791568314!3d-37.81362797975167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e33!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1605235486030!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <img class="rodape-imagem" src="Logo site.png" alt="logo da escola">
+        <div class="rodape-div-conteudo">
+            <p class="conteudo-rodape">Fale conosco: </p>
+            <p class="conteudo-rodape"><strong>Telefone:</strong> (43) 4321-1234</p>
+            <p class="conteudo-rodape"><strong>Email:</strong> campoconectado@buscadoronline.com.br</p>
+            <p class="copyright">&copy; Copyright Campo Conectado - 2024</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

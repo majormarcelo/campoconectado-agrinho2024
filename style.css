@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #067000;
+    --secondary-color: #333;
+    --background-color: #f0f0f0;
+    --text-color: #000;
+    --header-height: 135px;
+    --footer-height: 60px;
+}
+
+body {
+    font-family: Montserrat, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: justify;
+    font-size: 18px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; 
+}
+
+.cabecalho-imagem{
+    width: 10%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffde59;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4d4d4;
+}
+
+
+.sobre-titulo, .perfil-titulo, .buscar-titulo, .depoimentos-titulo, .contato-titulo  {
+    font-size: 2em; 
+    margin-bottom: 20px; 
+    text-align: center;
+    background-color: #067000;
+    color: #ffde59;
+}
+
+main {
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: var(--footer-height);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.rodape{
+    background-color:#067000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.rodape-imagem{
+    height: 50%;
+}
+
+.conteudo-rodape{
+    color:white;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: var(--primary-color);
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.perfil {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.perfil img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.perfil h3, .perfil p {
+    margin: 5px 0; 
+    text-align: center; 
+}
+
+#buscar-talentos {
+    position: relative; 
+    margin-bottom: 40px; 
+}
+
+.search-container {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px; 
+}
+
+.search-container input[type="text"] {
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    font-size: 12px; 
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-container button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-left: 10px; 
+}
+
+.search-container button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#lista-perfis .perfil {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px; 
+}
+
+#lista-perfis .perfil p {
+    margin: 10px 0; 
+    line-height: 1.5; 
+}
+.depoimento {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    white-space: pre-wrap; 
+}
+
+#contato {
+    margin-top: 40px; 
+}
+
+.contato-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.contato-form, .contato-mapa {
+    flex: 1; 
+}
+
+.contato-form {
+    max-width: 500px; 
+}
+
+.contato-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contato-form input, .contato-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.contato-form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.contato-form button:hover {
+    background-color: #45a049;
+}
+
+.contato-mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 0 20px;
+        height: auto; 
+    }
+
+    .cabecalho-imagem {
+        width: 120px; 
+    }
+
+    nav ul {
+        font-size: 18px;
+    }
+
+    .contato-container {
+        gap: 15px;
+    }
+
+    .contato-form, .contato-mapa {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .cabecalho-imagem {
+        width: 100px; 
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .contato-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato-form, .contato-mapa {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contato-mapa {
+        height: 300px;
+    }
+
+    #pesquisa {
+        width: calc(100% - 120px);
+    }
+}
+
+@media (max-width: 480px) {
+   
+    .cabecalho-imagem {
+        width: 80px; 
+    }
+
+    nav ul {
+        font-size: 14px; 
+    }
+
+    nav ul li a {
+        font-size: 14px; 
+    }
+    form label {
+        font-size: 14px;
+    }
+
+    form input, form textarea {
+        padding: 6px;
+    }
+
+    form button {
+        padding: 8px 16px;
+    }
+
+    .contato-form input, .contato-form textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .contato-form button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
